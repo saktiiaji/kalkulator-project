@@ -177,3 +177,111 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* ========================= Tentang Punya Ocid ========================= */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; color: #222; }
+
+.navbar {
+    display: flex;
+    flex-direction : row-reverse;
+    justify-content: space-between; /* untuk menukar posisi */
+    align-items: center;
+    padding: 16px 32px;
+    background-color: #1f3864;
+    color: white;
+}
+.menu {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+.hero {
+    padding: 60px 32px;
+    text-align: center;
+    background-color: #eef3fb;
+}
+.profil, .matkul, .kontak {
+    padding : 40px 32px;
+}
+.matkul-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+.card {
+    padding: 20px;
+    border: 1px solid #0011ff;
+    border-radius: 8px;
+    background-color: #b2c4e8;
+    text-align: center;
+}
+.card-new {
+    padding: 20px;
+    border: 1px solid #0011ff;
+    border-radius: 8px;
+    background-color: #b2c4e8;
+    text-align: center;
+    margin-top: 10px;
+}
+.footer {
+    padding: 20px 32px;
+    text-align: center;
+    background-color: #1f3864;
+    color: white;
+}
+.section {
+    background-color: #eef3fb;
+    padding: 40px 32px;
+}
+.fasilitas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+.fasilitas-card {
+    background-color: #b2c4e8;
+    border-left: 5px solid #1f3864;
+    border-radius: 5px;
+    padding: 16px;
+    font-weight: bold;
+}
+.lektur {
+    background-color: #eef3fb;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    padding: 40px 32px;
+}
+.lektur-flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.kartu-lektur {
+    flex : 1;
+    border: 1px solid #1f3864;
+    padding: 16px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: #b2c4e8;
+}
+
+@media ( max-width: 768px ) {
+    .matkul-grid { grid-template-columns: repeat(2, 1tr); }
+}
+
+@media ( max-width: 480px ) {
+    .navbar { flex-direction: column; gap: 12px; }
+    .menu { flex-direction: column; text-align: center; gap: 10px; }    
+    .matkul-grid { grid-template-columns: 1fr; }
+    .fasilitas-grid { grid-template-columns: 1fr; }
+}
